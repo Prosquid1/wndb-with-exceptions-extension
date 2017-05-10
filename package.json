@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "wndb-with-exceptions@^3.0.1",
+        "scope": null,
+        "escapedName": "wndb-with-exceptions",
+        "name": "wndb-with-exceptions",
+        "rawSpec": "^3.0.1",
+        "spec": ">=3.0.1 <4.0.0",
+        "type": "range"
+      },
+      "/Users/ColloDrollo/Documents/GaniNG/gani-fb-messenger/node-bot/node_modules/lemmer"
+    ]
+  ],
+  "_from": "wndb-with-exceptions@>=3.0.1 <4.0.0",
+  "_id": "wndb-with-exceptions@3.0.1",
+  "_inCache": true,
+  "_location": "/wndb-with-exceptions",
+  "_npmUser": {
+    "name": "morungos",
+    "email": "stuart@morungos.com"
+  },
+  "_npmVersion": "1.4.28",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "wndb-with-exceptions@^3.0.1",
+    "scope": null,
+    "escapedName": "wndb-with-exceptions",
+    "name": "wndb-with-exceptions",
+    "rawSpec": "^3.0.1",
+    "spec": ">=3.0.1 <4.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/lemmer"
+  ],
+  "_resolved": "https://registry.npmjs.org/wndb-with-exceptions/-/wndb-with-exceptions-3.0.1.tgz",
+  "_shasum": "bc61b234dfa8840f8f278af2d02647b6f8c71efe",
+  "_shrinkwrap": null,
+  "_spec": "wndb-with-exceptions@^3.0.1",
+  "_where": "/Users/ColloDrollo/Documents/GaniNG/gani-fb-messenger/node-bot/node_modules/lemmer",
+  "author": {
+    "name": "Stuart Watt",
+    "email": "stuart@morungos.com.com"
+  },
+  "bugs": {
+    "url": "https://github.com/morungos/WNdb-with-exceptions/issues"
+  },
+  "dependencies": {
+    "tar-fs": "latest"
+  },
+  "description": "WordNet exception files",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "bc61b234dfa8840f8f278af2d02647b6f8c71efe",
+    "tarball": "https://registry.npmjs.org/wndb-with-exceptions/-/wndb-with-exceptions-3.0.1.tgz"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "gitHead": "5348f31adeb98497be213b666fa3741fae0d63d8",
+  "homepage": "http://wordnet.princeton.edu/",
+  "keywords": [
+    "WordNet"
+  ],
+  "maintainers": [
+    {
+      "name": "morungos",
+      "email": "stuart@morungos.com"
+    }
+  ],
+  "name": "wndb-with-exceptions",
+  "optionalDependencies": {},
+  "readme": "WNdb-exclusions\n===============\n\nA drop-in replacement for WNdb, providing morphology exception lists.\n\nIn an ideal world this would be a plugin for WNdb, but npm is broken with\nthe timing of peer dependencies, so it can't be. Also, it's fixed to 3.0\nWordNet for now (even though the morphology exception lists are not tied\nto WordNet versions).\n\nIn practice, this is intended more as a development dependency than a \nproduction one, where you might want to add additional files. \n\n\n\nUsage\n-------\n\n```js\nvar wndb = require('wndb-with-exceptions');\n```\n\n\nProperties\n------------\n\nwndb.path (string) -- the path to the installed WordNet DB files\n\nwndb.files (array) -- list of file names under the path\n\nwndb.version (string) -- version string of WordNet database file\n\n\nAcknowledgement\n---------------\n\nDerived from the WNdb package:\nCopyright (c) 2012, 2014, mooster@42at.com\n(The MIT License)\n\nLicense\n-------\n\nSee LICENSE file for complete Princeton University WordNet(r) License.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/morungos/WNdb-with-exceptions.git"
+  },
+  "scripts": {
+    "postinstall": "node unpack.js WNdb-3.0.tar.gz"
+  },
+  "version": "3.0.1"
+}
